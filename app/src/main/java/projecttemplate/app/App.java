@@ -3,19 +3,18 @@
  */
 package projecttemplate.app;
 
-import projecttemplate.list.LinkedList;
-
+import static projecttemplate.app.MessageUtils.getMessage;
 import static projecttemplate.utilities.StringUtils.join;
 import static projecttemplate.utilities.StringUtils.split;
-import static projecttemplate.app.MessageUtils.getMessage;
 
 import org.apache.commons.text.WordUtils;
+import projecttemplate.list.LinkedList;
 
 public class App {
-    public static void main(String[] args) {
-        LinkedList tokens;
-        tokens = split(getMessage());
-        String result = join(tokens);
-        System.out.println(WordUtils.capitalize(result));
-    }
+  public static void main(String[] args) {
+    LinkedList tokens;
+    tokens = split(getMessage());
+    String result = join(tokens);
+    System.out.println(WordUtils.capitalize(result));
+  }
 }
