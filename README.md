@@ -34,3 +34,11 @@ To run the tests of all the subprojects:
 ```
 ./gradlew check
 ```
+
+## Linting
+
+To run `spotless`:
+
+```
+./gradlew spotlessApply
+```
