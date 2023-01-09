@@ -27,6 +27,10 @@ jobs:
         with:
           distribution: ${{ matrix.distribution }}
           java-version: ${{ matrix.java }}
+      - name: Install Gradle
+        run: |
+          # Gradle is downloaded and installed automatically
+          ./gradlew --help
       - name: Code Format
         run: ./gradlew --no-daemon spotlessCheck
       - name: Spot bugs
