@@ -50,3 +50,5 @@ subprojects {
         //jvmArgs.set(listOf("-Duser.language=ja"))
     }
 }
+
+defaultTasks("spotlessApply", "build")
