@@ -32,8 +32,8 @@ jobs:
           # Gradle is downloaded and installed automatically
           ./gradlew --help
       - name: Code Format
-        run: ./gradlew --no-daemon spotlessCheck
+        run: ./gradlew spotlessCheck
       - name: Spot bugs
-        run: ./gradlew --no-daemon spotbugsMain spotbugsTest
+        run: ./gradlew spotbugsMain spotbugsTest
       - name: Run Tests
-        run: ./gradlew --no-daemon test
+        run: ./gradlew test
